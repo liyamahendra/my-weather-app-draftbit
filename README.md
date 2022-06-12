@@ -55,7 +55,7 @@ if (status !== 'granted') {
 let location = await CustomCode.getCurrentPositionAsync({});
 
 let response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${location.coords.latitude}&lon=${location.coords.longitude}&APPID=17ca349a7b6e8ce7d1c45f5dde0d6c1f&units=metric`
+      `http://api.openweathermap.org/data/2.5/weather?lat=${location.coords.latitude}&lon=${location.coords.longitude}&APPID=apikey=metric`
     );
 
 let weatherResponse = await response.json();
